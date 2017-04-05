@@ -11,6 +11,12 @@
 |
 */
 
+use Illuminate\Http\Request;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::post('/foods', function(Request $request) {
+    dd($request->all());
 });
