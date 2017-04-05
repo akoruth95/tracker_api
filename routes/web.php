@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/foods', function(Request $request) {
-    dd($request->all());
-});
+Route::post('/foods', 'FoodController@create');
+Route::get('/foods', 'FoodController@retrieveAll');
+Route::get('/foods/{id}', 'FoodController@retrieve');
+Route::put('/foods/{id}', 'FoodController@update');
+Route::delete('/foods/{id}', 'FoodController@destroy');
