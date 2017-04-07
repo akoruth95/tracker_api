@@ -30,3 +30,10 @@ Route::get('/attractions', 'AttractionController@retrieveAll');
 Route::get('/attractions/{id}', 'AttractionController@retrieve');
 Route::put('/attractions/{id}', 'AttractionController@update');
 Route::delete('/attractions/{id}', 'AttractionController@destroy');
+
+//Athlete Controller Routes
+Route::post('/athletes', 'AthleteController@create');
+Route::get('/athletes', 'AthleteController@retrieveAll');
+Route::get('/athletes/{id}', 'AthleteController@retrieve');
+Route::put('/athletes/{id}', 'AthleteController@update');
+Route::delete('/athletes/{id}', 'AthleteController@destroy');
