@@ -15,11 +15,11 @@ class CreateFoodItemsTable extends Migration
     {
       Schema::create('foods', function(Blueprint $table) {
       $table->increments('id');
-      $table->string('item');
-      $table->integer('calories');
-      $table->integer('fat');
-      $table->integer('protein');
-      $table->integer('carbohydrates');
+      $table->string('item');//food item
+      $table->integer('calories');//total calories
+      $table->integer('fat');//total fat in grams
+      $table->integer('protein');//total protein in grams
+      $table->integer('carbohydrates');//total carbs in grams
       $table->timestamps();
     });
 

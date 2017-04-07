@@ -15,13 +15,13 @@ class CreateWealthiestAthletesTable extends Migration
     {
       Schema::create('athletes', function(Blueprint $table) {
         $table->increments('id');
-        $table->integer('rank');
-        $table->string('fname');
-        $table->string('lname');
-        $table->string('nationality');
-        $table->double('totalEarnings',5,1);
-        $table->double('salary',5,1);
-        $table->double('endorsements',5,1);
+        $table->integer('rank');//rank, based on wealth, among athletes
+        $table->string('fname');//first name
+        $table->string('lname');//last name
+        $table->string('nationality');//nation of origin
+        $table->double('totalEarnings',5,1);//endorsements plus salary plus personal accumulation
+        $table->double('salary',5,1);//yearly salary
+        $table->double('endorsements',5,1);//total earnings from endorsements alone
         $table->timestamps();
       });
     }
