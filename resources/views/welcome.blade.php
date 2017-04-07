@@ -62,6 +62,12 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .description {
+               text-align: center;
+               vertical-align: middle;
+               margin: 30px;
+           }
         </style>
     </head>
     <body>
@@ -79,15 +85,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Tracker API
                 </div>
-
+                <div class="description">
+                    <p>This API provides access to a food database for diet tracking applications, a database of public attractions
+                    in Chapel Hill for applications targeting tourists/visitors, and a database of the wealthiest athletes in the world!</p>
+                </div>
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://www.gitbook.com/book/akoruth95/tracker_api/details">API Documentation</a>
+                    <a href="https://github.com/akoruth95">Github</a>
                 </div>
             </div>
         </div>
